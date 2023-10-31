@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
-    WebDriver driver = null;
+    WebDriver driver;
 
     HomePage homePage;
 
@@ -28,4 +28,8 @@ public class BaseTest {
         homePage = new HomePage(driver, "https://www.wikipedia.org" );
         return homePage;
     }
+
+
+
+
 }
